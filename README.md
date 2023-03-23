@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Установка приложения `paint_online`
+Данный проект нигде не хостится, поэтому, вам придется выполнить эти шаги из инструкции
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### О проекте
+Проект Paint Online говорит сам за себя. Отправьте свою ссылку товарищу и тварите вместе.   
+Проект написан с использованием `Web Sockets`.
 
-## Available Scripts
+### Установка самого проекта
+Установите на свое устройство этот проект и поместите его в папку "client".
 
-In the project directory, you can run:
+### Установка пакетов проекта
+Проект разбит на две части:
++ Клиентская часть [paint_online-frontend](https://github.com/seishunn/paint_online-frontend)
++ Серверная часть  [paint_online-backend](https://github.com/seishunn/paint_online-backend)    
+  При открытии проекта переидите в `client`, в терминале введите следующую команду
+```js 
+    npm i
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Последний шаг
+Приложение установлено и его можно запускать. (Также не забудьте настроить и установить сервер)
+```js
+    cd .\client
+    npm start
+```
+И приложение и сервер должны быть одновременно запущены. Для этого откройте два терминала и в одном из них запустите `приложение`, а в другом, `сервер`.   
+После успешного запуска сервера, переидите в [paint_online-backend](https://github.com/seishunn/paint_online-backend) и выполните настройку и установку сервера / базы данных.
